@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #[em Inventory], a very basic Express website developed as a tutorial example on the Mozilla Developer Network.
+
+  h2 Dynamic content
+
+  p The item has the following record counts:
+
+  ul
+    li #[strong Items:] !{item_count}
+    li #[strong Copies:] !{item_instance_count}
+    li #[strong Copies available:] !{item_instance_available_count}
+    li #[strong Categories:] !{category_count}
